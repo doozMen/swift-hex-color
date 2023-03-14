@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "swift-hex-color",
+    platforms: [.macOS(.v12), .iOS(.v13), .watchOS(.v7), .tvOS(.v16)],
     products: [
         .library(
             name: "HexColor",
