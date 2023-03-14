@@ -1,11 +1,6 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yeahdongcn/UIColor-Hex-Swift/master/home-hero-swift-hero.png">
-</p>
+# swift-hex-color
 
-UIColor+Hex, now Swift.
-[![Build Status](https://travis-ci.org/yeahdongcn/UIColor-Hex-Swift.svg?branch=master)](https://travis-ci.org/yeahdongcn/UIColor-Hex-Swift) [![codecov.io](https://codecov.io/gh/yeahdongcn/UIColor-Hex-Swift/branch/master/graphs/badge.svg)](https://codecov.io/gh/yeahdongcn/UIColor-Hex-Swift/branch/master) ![](https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
-=================
-Convenience method for creating autoreleased color using RGBA hex string.
+> Note: if you need cocoapods/carthage look at the upstream
 
 ```swift
     // Solid color
@@ -33,49 +28,14 @@ Convenience method for creating autoreleased color using RGBA hex string.
         let androidFrontColor = UIColor(rgba)
     }
 ```
-## Release Notes
-
-* Upgrade to Swift 5.
-* macOS gets supported.
 
 ## Installation
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)
 
-To add a package dependency to your Xcode project, select File > Swift Packages > Add Package Dependency and enter https://github.com/yeahdongcn/UIColor-Hex-Swift to the text field.
-
-### [CocoaPods](http://cocoapods.org)
-
-Simply add the following lines to your `Podfile`:
-```ruby
-# required by CocoaPods 0.36.0.rc.1 for Swift Pods
-use_frameworks!
-
-pod 'UIColor_Hex_Swift', '~> 5.1.9'
+``` swift
+.package(name: "https://github.com/doozMen/swift-hex-color.git", from: "<#version#>")
 ```
 
-Then import it where you use it:
-```swift
-import UIColor_Hex_Swift
-```
-
-*(CocoaPods v0.36 or later required. See [this blog post](http://blog.cocoapods.org/Pod-Authors-Guide-to-CocoaPods-Frameworks/) for details.)*
-
-### [Carthage](http://github.com/Carthage/Carthage)
-
-Simply add the following line to your `Cartfile`:
-
-```ruby
-github "yeahdongcn/UIColor-Hex-Swift" >= 5.1.9
-```
-
-Then add the HexColor.framework to your frameworks list in the Xcode project.
-
-Then import it where you use it:
-```swift
-import HEXColor
-```
-
----
-
-See more in [RSBarcodes_Swift](https://github.com/yeahdongcn/RSBarcodes_Swift) and [objc version](https://github.com/yeahdongcn/RSBarcodes)
+> Note: This was forked of due to problems with building for cocoapods/carthage, this fork takes the same code but without the bagage of multiple
+> dependency manager support.

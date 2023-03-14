@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import HEXColor
+@testable import UIColorHexSwift
 
 class HEXColorTests: XCTestCase {
     
